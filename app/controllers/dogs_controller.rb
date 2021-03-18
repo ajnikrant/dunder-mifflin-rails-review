@@ -7,9 +7,4 @@ class DogsController < ApplicationController
         @dog = Dog.find(params[:id])
     end
 
-    def create
-        @dog = Dog.create(snack_params)
-    end
-
-
 end

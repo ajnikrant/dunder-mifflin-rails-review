@@ -5,5 +5,10 @@ Rails.application.routes.draw do
   get '/dogs', to: 'dogs#index', as: '/dogs'
   get '/dogs/:id', to: 'dogs#show', as: '/dog'
 
+  get '/employees', to: 'employees#index', as: 'employees'
+  get '/employees/new', to: 'employees#new', as: 'new_employee'
+  get 'employees/:id', to: 'employees#show', as: 'employee'
+  post '/employees', to: 'employees#create'
+  
 
 end
