@@ -7,9 +7,9 @@ class DogsController < ApplicationController
         @dog = Dog.find(params[:id])
     end
 
-    # def method_name
-        
-    # end
+    def create
+        @dog = Dog.create(snack_params)
+    end
 
 
 end
