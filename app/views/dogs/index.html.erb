@@ -1,8 +1,7 @@
 <h1> Dog Index Page </h1>
 
-<% @dogs.each do |dog|%>
-   Dog Name <%= dog.name%><br>
-  Dog Breed <%=  dog.breed%><br>
-   Dog Age<%=  dog.age%><br>
-   <br>
+<% @dogs.each do |dog| %>
+    <div><%= link_to dog.name, dog_path(dog.id) %></div><br>
 <% end%>
+
+
